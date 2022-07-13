@@ -1,3 +1,5 @@
+flowchart
+
 ```mermaid
 flowchart TD
   A[Should I go to work?] --> B[Is it Saturday?];
@@ -5,4 +7,16 @@ flowchart TD
   B -- No --> D[Is it Sunday?];
   D -- Yes --> C;
   D -- No --> E[Go to work];
+```
+
+class diagram
+
+```mermaid
+classDiagram
+  Comic <| -- Book
+  Newspaper <| -- Book
+  Novel <| -- Book
+  class Book {
+  + void read()
+  }
 ```
